@@ -3,12 +3,20 @@ body {
   max-width: 7in;
 }
 
-h1 {
-  font-family: 'Trirong', serif;
-  font-weight: lighter;
-  font-variant: small-caps;
-  margin: 0;
-  text-align: center;
+.header {
+  padding-bottom: .2in;
+
+  h1 {
+    font-family: 'Trirong', serif;
+    font-weight: lighter;
+    font-variant: small-caps;
+    margin: 0;
+    text-align: center;
+  }
+
+  .contact {
+    font-size: .9em;
+  }
 }
 
 .category {
@@ -20,10 +28,16 @@ h1 {
   }
 
   .section {
-    padding-left: 1.5in;
+    padding-left: 1.25in;
+    padding-bottom: .2in;
 
     .title {
+      font-weight: bold;
       float: none;
+    }
+
+    ul {
+      margin: 0;
     }
 
     .date {

@@ -6,12 +6,17 @@
     <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
   </head>
   <body>
-    <div class="heading">
+    <div class="header">
       <h1>Matthew C. Lee</h1>
       <hr>
-      <div style="text-align: center">2601 Channing Way, Berkeley 94704</div>
-      <div style="text-align: center">mattlee96@berkeley.edu</div>
-      <div style="text-align: center">(408) 888-2702</div>
+      <div class="contact">
+        <!--
+        <div style="text-align: center">2601 Channing Way, Berkeley 94704  -  mattlee96@berkeley.edu  -  (408) 888-2702</div>
+        -->
+        <div style="text-align: center">2601 Channing Way, Berkeley 94704</div>
+        <div style="text-align: center">mattlee96@berkeley.edu</div>
+        <div style="text-align: center">(408) 888-2702</div>
+      </div>
     </div>
 
     <div class="category">
@@ -25,71 +30,87 @@
       </div>
     </div>
 
-    <span><h2>Education</h2></span>
-    <span class="section">
-      <div>B.A. Mathematics</div>
-      <div>GPA 3.855/4.0</div>
-      <div>August 2014 - May 2018</div>
-      <div>Berkeley, CA</div>
-    </span>
+    <div class="category">
+      <div class="title">Experiences</div>
+      <div class="section">
+        <div class="date">May 2016 - August 2016</div>
+        <div class="title">Zumigo</div>
+        <div class="place"> San Jose, CA</div>
+        <div>Software Intern</div>
+        <ul>
+          <li>Built prototypes demonstrating company API usage and functionality
+      Android Prototype: Demonstrated how to select network choice (cellular data
+      or wifi) programmatically when connecting to a url</li>
+          <li>Java & Nginx Prototype: Configured Nginx server to require client and server side ssl verification, and demonstrated in Java how to connect to a url with custom (self-signed) client and server certificates</li>
+          <li>Node.js & AngularJS Prototype: Demonstrated a secondary method (not using redirection) to allow header enrichment over https connections</li>
+        </ul>
+      </div>
 
-    <h2>Experiences</h2>
-    <h3>Zumigo</h3>
-    <div>Software Intern</div>
-    <ul>
-      <li>Built prototypes demonstrating company API usage and functionality
-  Android Prototype: Demonstrated how to select network choice (cellular data
-  or wifi) programmatically when connecting to a url</li>
-      <li>Java & Nginx Prototype: Configured Nginx server to require client and server side ssl verification, and demonstrated in Java how to connect to a url with custom (self-signed) client and server certificates</li>
-      <li>Node.js & AngularJS Prototype: Demonstrated a secondary method (not using redirection) to allow header enrichment over https connections</li>
-    </ul>
-    <div>May 2016 - August 2016</div>
-    <div>San Jose, CA</div>
+      <div class="section">
+        <div class="date">May 2015 - September 2015</div>
+        <div class="title">Fabrik</div>
+        <div class="place">Palo Alto, CA</div>
+        <div>Intern / Cofounder</div>
+        <ul>
+          <li>Interned in a formative stage, then took a semester off from school to cofound</li>
+          <li>Built a Messaging App aimed at bringing group management into chat conversations, targeted mainly at student groups (32,000 lines of code)</li>
+          <li>Full-stack Development (AngularJS frontend, Ruby on Rails backend as a JSON API), published on web, iOS and Android (using Ionic)</li>
+          <li>Conducted user studies to understand market needs according to the Lean Startup Methodology model of product development</li>
+          <li>Defined ongoing and long-term startup direction through frameworks like the Business Canvas Model, Crossing the Chasm, and Risk Board</li>
+        </ul>
+      </div>
 
-    <h3>Fabrik</h3>
-    <div>Intern / Cofounder</div>
-    <ul>
-      <li>Interned in a formative stage, then took a semester off from school to cofound</li>
-      <li>Built a Messaging App aimed at bringing group management into chat conversations, targeted mainly at student groups (32,000 lines of code)</li>
-      <li>Full-stack Development (AngularJS frontend, Ruby on Rails backend as a JSON API), published on web, iOS and Android (using Ionic)</li>
-      <li>Conducted user studies to understand market needs according to the Lean Startup Methodology model of product development</li>
-      <li>Defined ongoing and long-term startup direction through frameworks like the Business Canvas Model, Crossing the Chasm, and Risk Board</li>
-    </ul>
-    <div>May 2015 - September 2015</div>
-    <div>Palo Alto, CA</div>
+      <div class="section">
+        <div class="date">Various Summers</div>
+        <div class="title">Ross Mathematics Program</div>
+        <div class="place">Columbus, OH</div>
+        <div>Counselor</div>
+        <ul>
+          <li>Coursework in Linear Algebra and Various Topics, Mentored Students in Number Theory and Abstract Algebra</li>
+          <li>Coursework in Elliptic Curves and Ergodic Theory</li>
+          <li>Coursework in Number Theory and Abstract Algebra</li>
+        </ul>
+      </div>
+    </div>
 
-    <h3>Ross Mathematics Program</h3>
-    <div>Counselor</div>
-    <ul>
-      <li>Coursework in Linear Algebra and Various Topics, Mentored Students in Number Theory and Abstract Algebra</li>
-      <li>Coursework in Elliptic Curves and Ergodic Theory</li>
-      <li>Coursework in Number Theory and Abstract Algebra</li>
-    </ul>
-    <div>Various Summers</div>
-    <div>Columbus, OH</div>
+    <div class="category">
+      <div class="title">Coursework</div>
+      <div class="section">
+        <div class="title">University of California, Berkeley</div>
+        <ul style="float: right">
+          <li>Second Course in Abstract Algebra</li>
+          <li>Honors Real Analysis</li>
+          <li>Second Course in Real Analysis</li>
+          <li>Linear Algebra & Differential Equations</li>
+        </ul>
+        <ul>
+          <li>Algorithms</li>
+          <li>Data Structures</li>
+          <li>Combinatorics</li>
+          <li>Abstract Algebra</li>
+          <li>Honors Complex Analysis</li>
+        </ul>
+      </div>
+    </div>
 
-    <h2>Coursework</h2>
-    <h3>University of California, Berkeley</h3>
-    <ul>
-      <li>Algorithms</li>
-      <li>Data Structures</li>
-      <li>Combinatorics</li>
-      <li> Honors Complex Analysis</li>
-      <li>Second Course in Real Analysis</li>
-      <li>Second Course in Abstract Algebra</li>
-      <li>Honors Real Analysis</li>
-      <li>Abstract ALgebra</li>
-      <li>Linear Algebra & Differential Equations</li>
-    </ul>
+    <div class="category">
+      <div class="title">Skills</div>
+      <div class="section">
+        <div class="title">Languages</div>
+        <div>AngularJS, Node.js, Express, Java, Ruby on Rails, Android, MongoDB, PostgreSQL, HTML, CSS, CoffeeScript, Ionic, Cordova, Python, Bash, cURL, LATEX</div>
+      </div>
 
-    <h2>Skills</h2>
-    <h3>Languages</h3>
-    AngularJS, Node.js, Express Framework, Java, Ruby on Rails, An- droid, MongoDB, PostgreSQL, HTML, CSS, CoffeeScript, Ionic, Cordova, Python, Bash, cURL, LATEX
-    <h3>Software / APIs</h3>
-    Heroku, Twilio, Pusher, Github, Vim
-    <h2>Awards</h2>
+      <div class="section">
+        <div class="title">Software / APIs</div>
+        <div>Heroku, Twilio, Pusher, Github, Vim</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <div class="title">Awards</div>
     Honorable Mention Honorable Mention 3rd Place
      2nd Place
      Santa Clara University Math Contest 2013 Bay Area Math Olympiad 2012 Berkeley Math Tournament, Tournament Round 2012 Santa Clara Valley Field Day, Leap Frog Round 2012
+   </div>
  </body>
 </html>
