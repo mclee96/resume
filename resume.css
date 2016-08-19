@@ -1,0 +1,26 @@
+body {
+  margin: auto;
+  max-width: 7in; }
+
+h1 {
+  font-family: 'Trirong', serif;
+  font-weight: lighter;
+  font-variant: small-caps;
+  margin: 0;
+  text-align: center; }
+
+.category .title {
+  font-family: 'Baskerville', serif;
+  font-weight: lighter;
+  font-variant: small-caps;
+  float: left; }
+.category .section {
+  padding-left: 1.5in; }
+  .category .section .title {
+    float: none; }
+  .category .section .date {
+    float: right; }
+  .category .section .place {
+    float: right; }
+
+/*# sourceMappingURL=resume.css.map */
