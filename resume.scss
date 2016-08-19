@@ -1,0 +1,28 @@
+body {
+  margin: auto;
+  max-width: 7in;
+}
+
+h1 {
+  font-family: 'Trirong', serif;
+  font-weight: lighter;
+  font-variant: small-caps;
+  margin: 0;
+  text-align: center;
+}
+
+.category {
+  .title {
+    font-family: 'Baskerville', serif;
+    font-weight: lighter;
+    font-variant: small-caps;
+    margin: 0;
+    max-width: 2in;
+    padding: 0;
+    float: left;
+  }
+
+  .section {
+    padding-left: 1.5in;
+  }
+}
