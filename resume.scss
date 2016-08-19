@@ -1,18 +1,22 @@
+$vert-spacing: 1em;
+$head-font: 'Taviraj', serif;
+$secondary-font: 'Baskerville', serif;
+
 body {
   margin: auto;
-  max-width: 7.25in;
+  max-width: 7in;
   font-size: 11pt;
 }
 
 .header {
-  padding-bottom: .8em;
+  padding-bottom: $vert-spacing + 1em;
+  text-align: center;
 
   h1 {
-    font-family: 'Taviraj', serif;
+    font-family: $head-font;
     font-weight: lighter;
     font-variant: small-caps;
     margin: 0;
-    text-align: center;
   }
 
   hr {
@@ -26,29 +30,27 @@ body {
 
 .category {
   .title {
-    font-family: 'Baskerville', serif;
-    font-weight: lighter;
+    font-family: $secondary-font;
     font-variant: small-caps;
     float: left;
-    font-size: 12pt;
   }
 
   .section {
     padding-left: 7em;
-    padding-bottom: .8em;
+    padding-bottom: $vert-spacing;
 
     .title {
       font-weight: bold;
       float: none;
     }
 
-    /*
+    .description {
+      font-style: italic;
+    }
+
     .position {
-      font-family: 'Baskerville', serif;
-      font-weight: lighter;
       font-variant: small-caps;
     }
-    */
 
     ul {
       margin: 0;
