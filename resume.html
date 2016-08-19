@@ -2,17 +2,13 @@
   <head>
     <title>Resume</title>
     <link rel="stylesheet" href="resume.css">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
   </head>
   <body>
     <div class="header">
       <h1>Matthew C. Lee</h1>
       <hr>
       <div class="contact">
-        <!--
-        <div style="text-align: center">2601 Channing Way, Berkeley 94704  -  mattlee96@berkeley.edu  -  (408) 888-2702</div>
-        -->
         <div style="text-align: center">2601 Channing Way, Berkeley 94704</div>
         <div style="text-align: center">mattlee96@berkeley.edu</div>
         <div style="text-align: center">(408) 888-2702</div>
@@ -22,35 +18,34 @@
     <div class="category">
       <div class="title">Education</div>
       <div class="section">
-        <div class="date">August 2014 - May 2018</div>
-        <div class="title">University of California, Berkeley</div>
         <div class="place">Berkeley, CA</div>
+        <div class="title">University of California, Berkeley</div>
+        <div class="date">August 2014 - Present</div>
         <div>B.A. Mathematics</div>
         <div>GPA 3.855/4.0</div>
       </div>
     </div>
 
     <div class="category">
-      <div class="title">Experiences</div>
+      <div class="title">Experience</div>
       <div class="section">
-        <div class="date">May 2016 - August 2016</div>
-        <div class="title">Zumigo</div>
         <div class="place"> San Jose, CA</div>
-        <div>Software Intern</div>
+        <div class="title">Zumigo</div>
+        <div class="date">May 2016 - August 2016</div>
+        <div class="position">Software Intern</div>
         <ul>
-          <li>Built prototypes demonstrating company API usage and functionality
-      Android Prototype: Demonstrated how to select network choice (cellular data
-      or wifi) programmatically when connecting to a url</li>
-          <li>Java & Nginx Prototype: Configured Nginx server to require client and server side ssl verification, and demonstrated in Java how to connect to a url with custom (self-signed) client and server certificates</li>
-          <li>Node.js & AngularJS Prototype: Demonstrated a secondary method (not using redirection) to allow header enrichment over https connections</li>
+          <li>Prototyped a new method to support mobile carrier header enrichment over SSL encrypted calls to our APIs</li>
+          <li>Prototyped three methods to allow Android phones to consistently access our APIs through cellular data</li>
+          <li>Prototyped configuration and basic usage of SSL encryption for our Nginx servers and Java APIs</li>
+          <li>Wrote script to update our internal SSL certificates with our clients' SSL certificates</li>
         </ul>
       </div>
 
       <div class="section">
-        <div class="date">May 2015 - September 2015</div>
-        <div class="title">Fabrik</div>
         <div class="place">Palo Alto, CA</div>
-        <div>Intern / Cofounder</div>
+        <div class="title">Fabrik</div>
+        <div class="date">May 2015 - September 2015</div>
+        <div class="position">Software and Product Development Intern</div>
         <ul>
           <li>Interned in a formative stage, then took a semester off from school to cofound</li>
           <li>Built a Messaging App aimed at bringing group management into chat conversations, targeted mainly at student groups (32,000 lines of code)</li>
@@ -61,13 +56,21 @@
       </div>
 
       <div class="section">
-        <div class="date">Various Summers</div>
-        <div class="title">Ross Mathematics Program</div>
         <div class="place">Columbus, OH</div>
-        <div>Counselor</div>
+        <div class="title">Ross Mathematics Program</div>
+        <div class="date">June 2014 - July 2014</div>
+        <div class="position">Counselor</div>
         <ul>
           <li>Coursework in Linear Algebra and Various Topics, Mentored Students in Number Theory and Abstract Algebra</li>
+        </ul>
+        <div class="date">June 2013 - July 2013</div>
+        <div class="position">Junior Counselor</div>
+        <ul>
           <li>Coursework in Elliptic Curves and Ergodic Theory</li>
+        </ul>
+        <div class="date">June 2012 - July 2012</div>
+        <div class="position">Student</div>
+        <ul>
           <li>Coursework in Number Theory and Abstract Algebra</li>
         </ul>
       </div>
@@ -108,9 +111,20 @@
 
     <div class="category">
       <div class="title">Awards</div>
-    Honorable Mention Honorable Mention 3rd Place
-     2nd Place
-     Santa Clara University Math Contest 2013 Bay Area Math Olympiad 2012 Berkeley Math Tournament, Tournament Round 2012 Santa Clara Valley Field Day, Leap Frog Round 2012
+      <div class="section awards">
+        <div class="date">2013</div>
+        <div class="award">Honorable Mention</div>
+        <div class="event">Santa Clara University Math Contest</div>
+        <div class="date">2012</div>
+        <div class="award">Honorable Mention</div>
+        <div class="event">Bay Area Math Olympiad</div>
+        <div class="date">2012</div>
+        <div class="award">3rd Place</div>
+        <div class="event">Berkeley Math Tournament, Tournament Round</div>
+        <div class="date">2012</div>
+        <div class="award">2nd Place</div>
+        <div class="event">Santa Clara Valley Field Day, Leap Frog Round</div>
+      </div>
    </div>
  </body>
 </html>
