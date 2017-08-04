@@ -3,14 +3,14 @@ body {
   max-width: 7in;
   font-size: 11pt; }
 
-.section:first-of-type {
+.personal-info {
   padding-bottom: 2em;
   text-align: center; }
-  .section:first-of-type header {
+  .personal-info .name {
     font-family: "Taviraj", serif;
     font-variant: small-caps;
     font-size: xx-large; }
-  .section:first-of-type hr {
+  .personal-info hr {
     margin-top: 0;
     border: 0;
     height: 1;
@@ -19,8 +19,9 @@ body {
     background-image: -ms-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
     background-image: -o-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
     background-image: linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF); }
-  .section:first-of-type .contact {
+  .personal-info .address .email .phone {
     font-size: .9em; }
+
 .section .title {
   font-family: "Baskerville", serif;
   font-variant: small-caps;
