@@ -35,7 +35,7 @@ body {
 	}
 }
 
-.education, .experience {
+.education, .experience, .coursework, .skills {
   header {
     font-family: $primary-font;
     font-variant: small-caps;
@@ -52,6 +52,10 @@ body {
 			float: left;
 		}
 
+		.company-name {
+			font-family: $primary-font;
+		}
+
 		.company-description {
 			font-style: italic;
 			float: left;
@@ -59,6 +63,7 @@ body {
 
 		.major, .position {
 			float: left;
+			clear: left;
 		}
 
 		.location, .date {
@@ -81,7 +86,22 @@ body {
 
     ul {
       margin: 0;
+			padding-left: 10px;
+			list-style-position: inside;
     }
+
+		.temp {
+			li {
+				display: inline;
+				&:after {
+					content: ", "
+				}
+
+				&:last-child:after {
+					content: "";
+				}
+			}
+		}
 
 	}
 }
