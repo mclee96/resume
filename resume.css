@@ -3,17 +3,16 @@ body {
   max-width: 7in;
   font-size: 11pt; }
 
-.header {
+.section:first-of-type {
   padding-bottom: 2em;
   text-align: center; }
-  .header h1 {
+  .section:first-of-type header {
     font-family: "Taviraj", serif;
-    font-weight: lighter;
     font-variant: small-caps;
-    margin: 0; }
-  .header hr {
+    font-size: xx-large; }
+  .section:first-of-type hr {
     margin-top: 0; }
-  .header .contact {
+  .section:first-of-type .contact {
     font-size: .9em; }
 
 .category .title {

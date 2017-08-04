@@ -1,6 +1,6 @@
 $vert-spacing: 1em;
-$head-font: 'Taviraj', serif;
-$secondary-font: 'Baskerville', serif;
+$name-font: 'Taviraj', serif;
+$primary-font: 'Baskerville', serif;
 
 body {
   margin: auto;
@@ -8,29 +8,30 @@ body {
   font-size: 11pt;
 }
 
-.header {
-  padding-bottom: $vert-spacing + 1em;
-  text-align: center;
+.section {
+	&:first-of-type {
+		padding-bottom: $vert-spacing + 1em;
+		text-align: center;
 
-  h1 {
-    font-family: $head-font;
-    font-weight: lighter;
-    font-variant: small-caps;
-    margin: 0;
-  }
+		header {
+			font-family: $name-font;
+			font-variant: small-caps;
+			font-size: xx-large;
+		}
 
-  hr {
-    margin-top: 0;
-  }
+		hr {
+			margin-top: 0;
+		}
 
-  .contact {
-    font-size: .9em;
-  }
+		.contact {
+			font-size: .9em;
+		}
+	}
 }
 
 .category {
   .title {
-    font-family: $secondary-font;
+    font-family: $primary-font;
     font-variant: small-caps;
     float: left;
   }
