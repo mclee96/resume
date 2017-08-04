@@ -21,24 +21,23 @@ body {
     background-image: linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF); }
   .section:first-of-type .contact {
     font-size: .9em; }
-
-.category .title {
+.section .title {
   font-family: "Baskerville", serif;
   font-variant: small-caps;
   float: left; }
-.category .section {
+.section .sub-section {
   padding-left: 7em;
   padding-bottom: 1em; }
-  .category .section .title {
+  .section .sub-section .title {
     font-weight: bold;
     float: none; }
-  .category .section .description {
+  .section .sub-section .description {
     font-style: italic; }
-  .category .section .position {
+  .section .sub-section .position {
     font-variant: small-caps; }
-  .category .section ul {
+  .section .sub-section ul {
     margin: 0; }
-  .category .section .date, .category .section .place {
+  .section .sub-section .date, .section .sub-section .place {
     float: right;
     font-style: italic; }
 

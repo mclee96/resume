@@ -35,16 +35,14 @@ body {
 			font-size: .9em;
 		}
 	}
-}
 
-.category {
   .title {
     font-family: $primary-font;
     font-variant: small-caps;
     float: left;
   }
 
-  .section {
+  .sub-section {
     padding-left: 7em;
     padding-bottom: $vert-spacing;
 
