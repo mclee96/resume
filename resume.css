@@ -11,7 +11,14 @@ body {
     font-variant: small-caps;
     font-size: xx-large; }
   .section:first-of-type hr {
-    margin-top: 0; }
+    margin-top: 0;
+    border: 0;
+    height: 1;
+    background-image: -webkit-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
+    background-image: -moz-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
+    background-image: -ms-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
+    background-image: -o-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
+    background-image: linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF); }
   .section:first-of-type .contact {
     font-size: .9em; }
 
