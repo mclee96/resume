@@ -1,0 +1,87 @@
+body {
+  font-family: "Baskerville", serif;
+  margin: auto;
+  max-width: 8in;
+  font-size: 11pt;
+  padding-top: 0.5in;
+  padding-bottom: 0.5in;
+  position: relative; }
+
+hr {
+  position: absolute;
+  top: 0;
+  left: 1.25in;
+  width: 1;
+  border: 0;
+  height: 100%;
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF); }
+
+.super-section header.super-section {
+  width: 1in;
+  font-family: "Baskerville", serif;
+  font-variant: small-caps;
+  float: left;
+  text-align: right; }
+
+section.section {
+  padding-left: 1.5in;
+  padding-bottom: 0.15in; }
+  section.section header.section {
+    position: relative; }
+    section.section header.section .name {
+      font-family: "Baskerville", serif;
+      font-weight: bold;
+      padding-right: .3em; }
+    section.section header.section .description {
+      font-family: "Times", serif;
+      font-style: italic;
+      font-size: .9em; }
+    section.section header.section .location {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-family: "Times", serif;
+      font-style: italic;
+      font-size: .9em; }
+
+section.sub-section header.sub-section {
+  position: relative; }
+  section.sub-section header.sub-section .position, section.sub-section header.sub-section .major {
+    font-variant: small-caps; }
+  section.sub-section header.sub-section .date {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: "Times", serif;
+    font-style: italic;
+    font-size: .9em; }
+section.sub-section ul {
+  margin: 0;
+  padding-left: 10px;
+  list-style-position: inside; }
+section.sub-section ul.classes {
+  columns: 2; }
+section.sub-section ul.languages li {
+  display: inline; }
+  section.sub-section ul.languages li:after {
+    content: ", "; }
+  section.sub-section ul.languages li:last-child:after {
+    content: ""; }
+
+.award {
+  position: relative; }
+  .award .accolade {
+    display: inline-block;
+    width: 10em; }
+  .award .event {
+    display: inline-block; }
+  .award .date {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: "Times", serif;
+    text-align: right;
+    font-size: .9em;
+    font-style: italic; }
+
+/*# sourceMappingURL=resume_vertical.css.map */

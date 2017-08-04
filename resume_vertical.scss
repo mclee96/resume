@@ -1,0 +1,133 @@
+$page-width: 8in;
+$vert-spacing: .15in;
+$name-font: 'Taviraj', serif;
+$primary-font: 'Baskerville', serif;
+$secondary-font: 'Times', serif;
+
+body {
+	font-family: $primary-font;
+  margin: auto;
+  max-width: $page-width;
+  font-size: 11pt;
+	padding-top: 0.5in;
+	padding-bottom: 0.5in;
+	position:relative;
+}
+
+hr {
+	position: absolute;
+	top: 0;
+	left: 1.25in;
+	width: 1;
+	border: 0;
+	height: 100%;
+	background-image: -webkit-linear-gradient(top, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
+}
+
+.super-section {
+  header.super-section {
+		width: 1in;
+    font-family: $primary-font;
+    font-variant: small-caps;
+    float: left;
+		text-align: right;
+  }
+}
+
+section.section {
+	padding-left: 1.5in;
+	padding-bottom: $vert-spacing;
+
+	header.section {
+		position: relative;
+
+		.name {
+			font-family: $primary-font;
+			font-weight: bold;
+			padding-right: .3em;
+		}
+
+		.description {
+			font-family: $secondary-font;
+			font-style: italic;
+			font-size: .9em;
+		}
+
+		.location {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+
+			font-family: $secondary-font;
+			font-style: italic;
+			font-size: .9em;
+		}
+	}
+}
+
+section.sub-section {
+	header.sub-section {
+		position: relative;
+
+		.position, .major {
+			font-variant: small-caps;
+		}
+
+		.date {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+
+			font-family: $secondary-font;
+			font-style: italic;
+			font-size: .9em;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding-left: 10px;
+		list-style-position: inside;
+	}
+
+	ul.classes {
+		columns: 2;
+	}
+
+	ul.languages {
+		li {
+			display: inline;
+			&:after {
+				content: ", "
+			}
+
+			&:last-child:after {
+				content: "";
+			}
+		}
+	}
+}
+
+.award {
+	position: relative;
+
+  .accolade {
+		display: inline-block;
+		width: 10em;
+  }
+
+	.event {
+		display: inline-block;
+	}
+
+	.date {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+		font-family: $secondary-font;
+		text-align: right;
+		font-size: .9em;
+		font-style: italic;
+	}
+}
