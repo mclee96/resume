@@ -77,10 +77,20 @@ section.sub-section ul.languages li {
   section.sub-section ul.languages li:last-child:after {
     content: ""; }
 
-.awards .award {
-  float: left;
-  width: 10em; }
-.awards .event {
-  float: left; }
+.award {
+  position: relative; }
+  .award .accolade {
+    display: inline-block;
+    width: 10em; }
+  .award .event {
+    display: inline-block; }
+  .award .date {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: "Times", serif;
+    text-align: right;
+    font-size: .9em;
+    font-style: italic; }
 
 /*# sourceMappingURL=resume.css.map */

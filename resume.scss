@@ -123,13 +123,26 @@ section.sub-section {
 	}
 }
 
-.awards {
-  .award {
-    float: left;
+.award {
+	position: relative;
+
+  .accolade {
+		display: inline-block;
 		width: 10em;
   }
 
-  .event {
-		float: left;
-  }
+	.event {
+		display: inline-block;
+	}
+
+	.date {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+		font-family: $secondary-font;
+		text-align: right;
+		font-size: .9em;
+		font-style: italic;
+	}
 }
