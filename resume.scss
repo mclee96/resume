@@ -1,10 +1,13 @@
+$page-width: 7in;
 $vert-spacing: .15in;
 $name-font: 'Taviraj', serif;
 $primary-font: 'Baskerville', serif;
+$secondary-font: 'Times', serif;
 
 body {
+	font-family: $primary-font;
   margin: auto;
-  max-width: 7in;
+  max-width: $page-width;
   font-size: 11pt;
 }
 
@@ -13,14 +16,16 @@ body {
 	text-align: center;
 
 	.name {
+		width:100%;
+		display: block;
 		font-family: $name-font;
 		font-variant: small-caps;
 		font-size: xx-large;
 	}
 
 	hr {
+		width: 100%;
 		margin-top: 0;
-
 		border: 0;
 		height: 1;
 		background-image: -webkit-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
@@ -30,17 +35,148 @@ body {
 		background-image: linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
 	}
 
-	.address, .email, .phone {
+	.contact-info {
 		font-size: .9em;
 	}
 }
 
-.education, .experience, .coursework, .skills, .awards {
-  header {
+.super-section {
+  header.super-section {
     font-family: $primary-font;
     font-variant: small-caps;
     float: left;
   }
+}
+section.section:not(.contact-info) {
+	padding-left: 1in;
+	padding-bottom: $vert-spacing;
+
+	header.section {
+		position: relative;
+		width: 100%;
+
+		.name {
+			font-family: $primary-font;
+			font-weight: bold;
+			padding-right: .3em;
+		}
+
+		.description {
+			font-family: $secondary-font;
+			font-style: italic;
+			font-size: .9em;
+		}
+
+		.location {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+
+			font-family: $secondary-font;
+			font-style: italic;
+			font-size: .9em;
+		}
+	}
+}
+
+section.sub-section {
+	header.sub-section {
+		position: relative;
+
+		.position, .major {
+			font-variant: small-caps;
+		}
+
+		.date {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+
+			font-family: $secondary-font;
+			font-style: italic;
+			font-size: .9em;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding-left: 10px;
+		list-style-position: inside;
+	}
+
+	ul.classes {
+		columns: 2;
+	}
+
+	ul.languages {
+		li {
+			display: inline;
+			&:after {
+				content: ", "
+			}
+
+			&:last-child:after {
+				content: "";
+			}
+		}
+	}
+}
+/*
+		.university, .company-name {
+			padding-right: .5em;
+			font-weight: bold;
+			float: left;
+		}
+
+		.company-name {
+			font-family: $primary-font;
+		}
+
+		.company-description {
+			font-family: $secondary-font;
+			font-style: italic;
+			float: left;
+			font-size: .9em;
+		}
+
+		.major {
+			float: left;
+			clear: left;
+		}
+
+		.location, .date {
+			font-family: $secondary-font;
+			font-style: italic;
+			text-align: right;
+		}
+
+    .title {
+      font-weight: bold;
+      float: none;
+    }
+
+    .position {
+      font-variant: small-caps;
+    }
+
+	}
+}
+
+.wrapper {
+	position: relative;
+}
+
+.date {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	font-family: $secondary-font;
+	font-style: italic;
+	font-size: .9em;
+}
+
+section {
 
   .sub-section {
     padding-left: 1in;
@@ -57,16 +193,19 @@ body {
 		}
 
 		.company-description {
+			font-family: $secondary-font;
 			font-style: italic;
 			float: left;
+			font-size: .9em;
 		}
 
-		.major, .position {
+		.major {
 			float: left;
 			clear: left;
 		}
 
 		.location, .date {
+			font-family: $secondary-font;
 			font-style: italic;
 			text-align: right;
 		}
@@ -76,13 +215,6 @@ body {
       float: none;
     }
 
-    .description {
-      font-style: italic;
-    }
-
-    .position {
-      font-variant: small-caps;
-    }
 
     ul {
       margin: 0;
@@ -106,52 +238,6 @@ body {
 	}
 }
 
-.section {
-
-  header, .title {
-    font-family: $primary-font;
-    font-variant: small-caps;
-    float: left;
-  }
-
-  .sub-section {
-    padding-left: 7em;
-    padding-bottom: $vert-spacing;
-
-		.university, .major {
-			font-weight: bold;
-			float: left;
-		}
-
-		.location, .date, .gpa {
-			font-style: italic;
-			text-align: right;
-		}
-
-    .title {
-      font-weight: bold;
-      float: none;
-    }
-
-    .description {
-      font-style: italic;
-    }
-
-    .position {
-      font-variant: small-caps;
-    }
-
-    ul {
-      margin: 0;
-    }
-
-    .date, .place {
-      float: right;
-      font-style: italic;
-    }
-  }
-}
-
 .awards {
   .award {
     float: left;
@@ -162,3 +248,5 @@ body {
 		float: left;
   }
 }
+
+*/

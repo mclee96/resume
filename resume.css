@@ -1,4 +1,5 @@
 body {
+  font-family: "Baskerville", serif;
   margin: auto;
   max-width: 7in;
   font-size: 11pt; }
@@ -7,10 +8,13 @@ body {
   padding-bottom: 0.2in;
   text-align: center; }
   .personal-info .name {
+    width: 100%;
+    display: block;
     font-family: "Taviraj", serif;
     font-variant: small-caps;
     font-size: xx-large; }
   .personal-info hr {
+    width: 100%;
     margin-top: 0;
     border: 0;
     height: 1;
@@ -19,79 +23,188 @@ body {
     background-image: -ms-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
     background-image: -o-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
     background-image: linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF); }
-  .personal-info .address, .personal-info .email, .personal-info .phone {
+  .personal-info .contact-info {
     font-size: .9em; }
 
-.education header, .experience header, .coursework header, .skills header, .awards header {
+.super-section header.super-section {
   font-family: "Baskerville", serif;
   font-variant: small-caps;
   float: left; }
-.education .sub-section, .experience .sub-section, .coursework .sub-section, .skills .sub-section, .awards .sub-section {
+
+section.section:not(.contact-info) {
   padding-left: 1in;
   padding-bottom: 0.15in; }
-  .education .sub-section .university, .education .sub-section .company-name, .experience .sub-section .university, .experience .sub-section .company-name, .coursework .sub-section .university, .coursework .sub-section .company-name, .skills .sub-section .university, .skills .sub-section .company-name, .awards .sub-section .university, .awards .sub-section .company-name {
-    padding-right: .5em;
-    font-weight: bold;
-    float: left; }
-  .education .sub-section .company-name, .experience .sub-section .company-name, .coursework .sub-section .company-name, .skills .sub-section .company-name, .awards .sub-section .company-name {
-    font-family: "Baskerville", serif; }
-  .education .sub-section .company-description, .experience .sub-section .company-description, .coursework .sub-section .company-description, .skills .sub-section .company-description, .awards .sub-section .company-description {
+  section.section:not(.contact-info) header.section {
+    position: relative;
+    width: 100%; }
+    section.section:not(.contact-info) header.section .name {
+      font-family: "Baskerville", serif;
+      font-weight: bold;
+      padding-right: .3em; }
+    section.section:not(.contact-info) header.section .description {
+      font-family: "Times", serif;
+      font-style: italic;
+      font-size: .9em; }
+    section.section:not(.contact-info) header.section .location {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-family: "Times", serif;
+      font-style: italic;
+      font-size: .9em; }
+
+section.sub-section header.sub-section {
+  position: relative; }
+  section.sub-section header.sub-section .position, section.sub-section header.sub-section .major {
+    font-variant: small-caps; }
+  section.sub-section header.sub-section .date {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: "Times", serif;
     font-style: italic;
-    float: left; }
-  .education .sub-section .major, .education .sub-section .position, .experience .sub-section .major, .experience .sub-section .position, .coursework .sub-section .major, .coursework .sub-section .position, .skills .sub-section .major, .skills .sub-section .position, .awards .sub-section .major, .awards .sub-section .position {
+    font-size: .9em; }
+section.sub-section ul {
+  margin: 0;
+  padding-left: 10px;
+  list-style-position: inside; }
+section.sub-section ul.classes {
+  columns: 2; }
+section.sub-section ul.languages li {
+  display: inline; }
+  section.sub-section ul.languages li:after {
+    content: ", "; }
+  section.sub-section ul.languages li:last-child:after {
+    content: ""; }
+
+/*
+		.university, .company-name {
+			padding-right: .5em;
+			font-weight: bold;
+			float: left;
+		}
+
+		.company-name {
+			font-family: $primary-font;
+		}
+
+		.company-description {
+			font-family: $secondary-font;
+			font-style: italic;
+			float: left;
+			font-size: .9em;
+		}
+
+		.major {
+			float: left;
+			clear: left;
+		}
+
+		.location, .date {
+			font-family: $secondary-font;
+			font-style: italic;
+			text-align: right;
+		}
+
+    .title {
+      font-weight: bold;
+      float: none;
+    }
+
+    .position {
+      font-variant: small-caps;
+    }
+
+	}
+}
+
+.wrapper {
+	position: relative;
+}
+
+.date {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+
+	font-family: $secondary-font;
+	font-style: italic;
+	font-size: .9em;
+}
+
+section {
+
+  .sub-section {
+    padding-left: 1in;
+    padding-bottom: $vert-spacing;
+
+		.university, .company-name {
+			padding-right: .5em;
+			font-weight: bold;
+			float: left;
+		}
+
+		.company-name {
+			font-family: $primary-font;
+		}
+
+		.company-description {
+			font-family: $secondary-font;
+			font-style: italic;
+			float: left;
+			font-size: .9em;
+		}
+
+		.major {
+			float: left;
+			clear: left;
+		}
+
+		.location, .date {
+			font-family: $secondary-font;
+			font-style: italic;
+			text-align: right;
+		}
+
+    .title {
+      font-weight: bold;
+      float: none;
+    }
+
+
+    ul {
+      margin: 0;
+			padding-left: 10px;
+			list-style-position: inside;
+    }
+
+		.temp {
+			li {
+				display: inline;
+				&:after {
+					content: ", "
+				}
+
+				&:last-child:after {
+					content: "";
+				}
+			}
+		}
+
+	}
+}
+
+.awards {
+  .award {
     float: left;
-    clear: left; }
-  .education .sub-section .location, .education .sub-section .date, .experience .sub-section .location, .experience .sub-section .date, .coursework .sub-section .location, .coursework .sub-section .date, .skills .sub-section .location, .skills .sub-section .date, .awards .sub-section .location, .awards .sub-section .date {
-    font-style: italic;
-    text-align: right; }
-  .education .sub-section .title, .experience .sub-section .title, .coursework .sub-section .title, .skills .sub-section .title, .awards .sub-section .title {
-    font-weight: bold;
-    float: none; }
-  .education .sub-section .description, .experience .sub-section .description, .coursework .sub-section .description, .skills .sub-section .description, .awards .sub-section .description {
-    font-style: italic; }
-  .education .sub-section .position, .experience .sub-section .position, .coursework .sub-section .position, .skills .sub-section .position, .awards .sub-section .position {
-    font-variant: small-caps; }
-  .education .sub-section ul, .experience .sub-section ul, .coursework .sub-section ul, .skills .sub-section ul, .awards .sub-section ul {
-    margin: 0;
-    padding-left: 10px;
-    list-style-position: inside; }
-  .education .sub-section .temp li, .experience .sub-section .temp li, .coursework .sub-section .temp li, .skills .sub-section .temp li, .awards .sub-section .temp li {
-    display: inline; }
-    .education .sub-section .temp li:after, .experience .sub-section .temp li:after, .coursework .sub-section .temp li:after, .skills .sub-section .temp li:after, .awards .sub-section .temp li:after {
-      content: ", "; }
-    .education .sub-section .temp li:last-child:after, .experience .sub-section .temp li:last-child:after, .coursework .sub-section .temp li:last-child:after, .skills .sub-section .temp li:last-child:after, .awards .sub-section .temp li:last-child:after {
-      content: ""; }
+		width: 10em;
+  }
 
-.section header, .section .title {
-  font-family: "Baskerville", serif;
-  font-variant: small-caps;
-  float: left; }
-.section .sub-section {
-  padding-left: 7em;
-  padding-bottom: 0.15in; }
-  .section .sub-section .university, .section .sub-section .major {
-    font-weight: bold;
-    float: left; }
-  .section .sub-section .location, .section .sub-section .date, .section .sub-section .gpa {
-    font-style: italic;
-    text-align: right; }
-  .section .sub-section .title {
-    font-weight: bold;
-    float: none; }
-  .section .sub-section .description {
-    font-style: italic; }
-  .section .sub-section .position {
-    font-variant: small-caps; }
-  .section .sub-section ul {
-    margin: 0; }
-  .section .sub-section .date, .section .sub-section .place {
-    float: right;
-    font-style: italic; }
+  .event {
+		float: left;
+  }
+}
 
-.awards .award {
-  float: left;
-  width: 10em; }
-.awards .event {
-  float: left; }
+*/
 
 /*# sourceMappingURL=resume.css.map */

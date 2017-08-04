@@ -5,153 +5,199 @@
     <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
   </head>
   <body>
-    <section class="personal-info">
-      <div class="name">Matthew C. Lee</div>
+    <section class="super-section personal-info">
+      <header class="super-section name">Matthew C. Lee</header>
       <hr>
-			<div class="address">2601 Channing Way, Berkeley 94704</div>
-			<div class="email">mattlee96@gmail.com</div>
-			<div class="phone">(408) 888-2702</div>
+			<section class="section contact-info">
+				<div class="address">2601 Channing Way, Berkeley 94704</div>
+				<div class="email">mattlee96@gmail.com</div>
+				<div class="phone">(408) 888-2702</div>
+			</section>
     </section>
 
-    <section class="education">
-      <header>Education</header>
+    <section class="super-section education">
+      <header class="super-section">Education</header>
 
-      <section class="sub-section">
-				<div class="university">University of California, Berkeley</div>
-        <div class="major">B.A. Mathematics</div>
-				<div class="location">Berkeley, CA</div>
-        <div class="date">August '14 - Present</div>
-        <div class="gpa">GPA 3.873/4.0</div>
-      </div>
-    </section>
-
-    <section class="experience">
-      <header>Experience</header>
-
-      <section class="sub-section">
-				<div class="company-name">LinkedIn</div>
-				<div class="company-description">Professional Social Network</div>
-        <div class="position">Software Engineering Intern</div>
-				<div class="location">Sunnyvale, CA</div>
-        <div class="date">May '17 - August '17</div>
-        <ul>
-					<li>Built a new notification (backend + frontend)</li>
-          <li>Prototyped three methods to allow Android phones to access our APIs over cellular data when connected to wifi</li>
-          <li>Prototyped SSL encryption config and usage for our Nginx servers and APIs</li>
-          <li>Wrote script to update our internal SSL certifications to allow access to our clients' APIs</li>
-        </ul>
-      </section>
-
-      <section class="sub-section">
-				<div class="company-name">Zumigo</div>
-				<div class="company-description">Mobile identity and location provider</div>
-        <div class="position">Software Engineering Intern</div>
-        <div class="location">San Jose, CA</div>
-        <div class="date">May '16 - August '16</div>
-        <ul>
-          <li>Prototyped a new method to support mobile carrier header enrichment over SSL encrypted calls to our APIs</li>
-          <li>Prototyped three methods to allow Android phones to access our APIs over cellular data when connected to wifi</li>
-          <li>Prototyped SSL encryption config and usage for our Nginx servers and APIs</li>
-          <li>Wrote script to update our internal SSL certifications to allow access to our clients' APIs</li>
-        </ul>
-      </section>
-
-      <section class="sub-section">
-				<div class="company-name">Fabrik</div>
-				<div class="company-description">Team management integrated messaging app</div>
-        <div class="position">Software and Product Development Intern</div>
-        <div class="location">Palo Alto, CA</div>
-        <div class="date">May '15 - August '15</div>
-        <ul>
-          <li>Contributed heavily to the codebase, including writing our entire chatroom creation process (Ruby on Rails backend, Angular + Ionic frontend)</li>
-          <li>Conducted user studies with Stanford and Berkeley student organization leaders and mapped out team management needs for these groups</li>
-          <li>Used user studies to define feature specs, metrics, and product development timeline</li>
-          <li>Published app on web, iOS, and Android and tested with a Stanford student organization</li>
-        </ul>
-      </section>
-
-      <section class="sub-section">
-				<div class="company-name">Ross Mathematics Program</div>
-				<div class="company-description">[Description]</div>
-        <div class="location">Columbus, OH</div>
-        <div class="position">Counselor</div>
-        <div class="date">June '14 - July '14</div>
-        <ul>
-          <li>Mentored and graded proofs for 5 Number Theory and Abstract Algebra students</li>
-          <li>Proof-based coursework in Linear Algebra and Miscellaneous Advanced Topics</li>
-        </ul>
-        <div class="position">Junior Counselor</div>
-        <div class="date">June '13 - July '13</div>
-        <ul>
-          <li>Assisted first-year students in their coursework</li>
-          <li>Proof-based coursework in Elliptic Curves and Ergodic Theory</li>
-        </ul>
-        <div class="position">First-Year Student</div>
-        <div class="date">June '12 - July '12</div>
-        <ul>
-          <li>Proof-based coursework in Number Theory and Abstract Algebra</li>
-        </ul>
+      <section class="section university">
+				<header class="section university-info">
+					<span class="name">University of California, Berkeley</span>
+					<span class="location">Berkeley, CA</span>
+				</header>
+				<section class="sub-section student-info">
+					<header class="sub-section degree">
+						<span class="major">B.A. Mathematics</span>
+						<span class="date">August '14 - Present</span>
+					</header>
+					<div class="gpa">GPA 3.873/4.0</div>
+				</section>
       </section>
     </section>
 
-    <section class="coursework">
-      <header>Coursework</header>
-      <section class="sub-section">
-        <div class="company-name">University of California, Berkeley</div>
-        <ul style="clear: left; columns: 2">
-          <li>Algorithms</li>
-          <li>Data Structures</li>
-          <li>Combinatorics</li>
-          <li>Abstract Algebra</li>
-          <li>Honors Complex Analysis</li>
-          <li>Second Course in Abstract Algebra</li>
-          <li>Honors Real Analysis</li>
-          <li>Second Course in Real Analysis</li>
-          <li>Linear Algebra & Differential Equations</li>
-        </ul>
+    <section class="super-section experience">
+      <header class="super-section">Experience</header>
+
+      <section class="section company">
+				<header class="section company-info">
+					<span class="name">LinkedIn</span>
+					<span class="description">Professional social network</span>
+					<span class="location">Sunnyvale, CA</span>
+				</header>
+				<section class="sub-section internship">
+					<header class="sub-section">
+						<span class="position">Software Engineering Intern</span>
+						<span class="date">May '17 - August '17</span>
+					</header>
+				</section>
+      </section>
+
+      <section class="section company">
+				<header class="section company-info">
+					<span class="name">Zumigo</span>
+					<span class="description">Mobile identity and location provider</span>
+					<span class="location">San Jose, CA</span>
+				</header>
+				<section class="sub-section internship">
+					<header class="sub-section">
+						<span class="position">Software Engineering Intern</span>
+						<span class="date">May '16 - August '16</span>
+					</header>
+					<ul class="summary">
+						<li>Prototyped mobile carrier header enrichment for SSL encrypted calls to our APIs</li>
+						<li>Prototyped three methods to allow Android phones to access our APIs over cellular data when connected to wifi</li>
+						<li>Configured SSL encryption for our Nginx servers</li>
+						<li>Wrote script to update our internal SSL certifications to allow access to our clients' APIs</li>
+					</ul>
+				</section>
+      </section>
+
+      <section class="section company">
+				<header class="section company-info">
+					<span class="name">Fabrik</span>
+					<span class="description">Team management integrated messaging app</span>
+					<span class="location">Palo Alto, CA</span>
+				</header>
+				<section class="sub-section internship">
+					<header class="sub-section">
+						<span class="position">Software and Product Development Intern</span>
+						<span class="date">May '15 - August '15</span>
+					</header>
+					<ul class="summary">
+						<li>Contributed heavily to the codebase, including writing our entire chatroom creation process (Ruby on Rails backend, Angular + Ionic frontend)</li>
+						<li>Conducted user studies with Stanford and Berkeley student organization leaders and mapped out team management needs for these groups</li>
+						<li>Used user studies to define feature specs, metrics, and product development timeline</li>
+						<li>Published app on web, iOS, and Android and tested with a Stanford student organization</li>
+					</ul>
+				</section>
+      </section>
+
+      <section class="section summer-program">
+				<header class="section program-info">
+					<span class="name">Ross Mathematics Program</span>
+					<span class="description">[Description]</span>
+					<span class="location">Columbus, OH</span>
+				</header>
+				<section class="sub-section">
+					<header class="sub-section">
+						<span class="position">Counselor</span>
+						<span class="date">June '14 - July '14</span>
+					</header>
+					<ul>
+						<li>Mentored and graded proofs for 5 Number Theory and Abstract Algebra students</li>
+						<li>Proof-based coursework in Linear Algebra and Miscellaneous Advanced Topics</li>
+					</ul>
+				</section>
+				<section class="sub-section">
+					<header class="sub-section">
+						<span class="position">Junior Counselor</span>
+						<span class="date">June '13 - July '13</span>
+					</header>
+					<ul>
+						<li>Assisted first-year students in their coursework</li>
+						<li>Proof-based coursework in Elliptic Curves and Ergodic Theory</li>
+					</ul>
+				</section>
+				<section class="sub-section">
+					<header class="sub-section">
+						<span class="position">First-Year Student</span>
+						<span class="date">June '12 - July '12</span>
+					</header>
+					<ul>
+						<li>Proof-based coursework in Number Theory and Abstract Algebra</li>
+					</ul>
+				</section>
       </section>
     </section>
 
-    <section class="skills" style="clear: left">
-      <header>Skills</header>
-      <section class="sub-section">
-        <div class="company-name" style="width: 8em">Languages</div>
-				<ul class="temp">
-					<li>AngularJS</li>
-					<li>Node.js</li>
-					<li>Express</li>
-					<li>D3.js</li>
-					<li>Java</li>
-					<li>Ruby on Rails</li>
-					<li>Android</li>
-					<li>Play Framework</li>
-					<li>MongoDB</li>
-					<li>PostgreSQL</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>Javascript</li>
-					<li>Ionic</li>
-					<li>Cordova</li>
-					<li>Python</li>
-				</ul>
-      </section>
-
-      <section class="sub-section">
-        <div class="company-name" style="width: 8em">Software / APIs</div>
-				<ul class="temp">
-					<li>Heroku</li>
-					<li>Twilio</li>
-					<li>Pusher</li>
-					<li>Github</li>
-					<li>Vim</li>
-					<li>OpenSSL</li>
-				</ul>
+    <section class="super-section coursework">
+      <header class="super-section">Coursework</header>
+      <section class="section">
+				<header class="section">
+					<span class="name">University of California, Berkeley</span>
+				</header>
+				<section class="sub-section">
+					<ul class="classes">
+						<li>Algorithms</li>
+						<li>Data Structures</li>
+						<li>Combinatorics</li>
+						<li>Abstract Algebra</li>
+						<li>Honors Complex Analysis</li>
+						<li>Second Course in Abstract Algebra</li>
+						<li>Honors Real Analysis</li>
+						<li>Second Course in Real Analysis</li>
+						<li>Linear Algebra & Differential Equations</li>
+					</ul>
+				</section>
       </section>
     </section>
 
-    <section class="awards">
-      <header>Awards</header>
-      <section class="sub-section awards">
+    <section class="super-section skills">
+      <header class="super-section">Skills</header>
+      <section class="section">
+				<header class="section">
+					<span class="name">Languages</span>
+				</header>
+				<section class="sub-section">
+					<ul class="languages">
+						<li>AngularJS</li>
+						<li>Node.js</li>
+						<li>Express</li>
+						<li>D3.js</li>
+						<li>Java</li>
+						<li>Ruby on Rails</li>
+						<li>Android</li>
+						<li>Play Framework</li>
+						<li>MongoDB</li>
+						<li>PostgreSQL</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Javascript</li>
+						<li>Ionic</li>
+						<li>Cordova</li>
+						<li>Python</li>
+					</ul>
+				</section>
+      </section>
+
+			<section class="section">
+				<header class="section">
+					<span class="name">Software / APIs</span>
+				</header>
+				<section class="sub-section">
+					<ul class="languages">
+						<li>Heroku</li>
+						<li>Twilio</li>
+						<li>Pusher</li>
+						<li>Github</li>
+						<li>Vim</li>
+						<li>OpenSSL</li>
+					</ul>
+				</section>
+      </section>
+    </section>
+
+    <section class="super-section">
+      <header class="super-section">Awards</header>
+      <section class="section awards">
         <div class="award">Honorable Mention</div>
         <div class="event">Santa Clara University Math Contest</div>
         <div class="date">2013</div>
