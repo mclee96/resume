@@ -1,4 +1,4 @@
-$vert-spacing: 1em;
+$vert-spacing: .15in;
 $name-font: 'Taviraj', serif;
 $primary-font: 'Baskerville', serif;
 
@@ -9,7 +9,7 @@ body {
 }
 
 .personal-info {
-	padding-bottom: $vert-spacing + 1em;
+	padding-bottom: $vert-spacing + .05in;
 	text-align: center;
 
 	.name {
@@ -30,14 +30,65 @@ body {
 		background-image: linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
 	}
 
-	.address .email .phone {
+	.address, .email, .phone {
 		font-size: .9em;
+	}
+}
+
+.education, .experience {
+  header {
+    font-family: $primary-font;
+    font-variant: small-caps;
+    float: left;
+  }
+
+  .sub-section {
+    padding-left: 1in;
+    padding-bottom: $vert-spacing;
+
+		.university, .company-name {
+			padding-right: .5em;
+			font-weight: bold;
+			float: left;
+		}
+
+		.company-description {
+			font-style: italic;
+			float: left;
+		}
+
+		.major, .position {
+			float: left;
+		}
+
+		.location, .date {
+			font-style: italic;
+			text-align: right;
+		}
+
+    .title {
+      font-weight: bold;
+      float: none;
+    }
+
+    .description {
+      font-style: italic;
+    }
+
+    .position {
+      font-variant: small-caps;
+    }
+
+    ul {
+      margin: 0;
+    }
+
 	}
 }
 
 .section {
 
-  .title {
+  header, .title {
     font-family: $primary-font;
     font-variant: small-caps;
     float: left;
@@ -46,6 +97,16 @@ body {
   .sub-section {
     padding-left: 7em;
     padding-bottom: $vert-spacing;
+
+		.university, .major {
+			font-weight: bold;
+			float: left;
+		}
+
+		.location, .date, .gpa {
+			font-style: italic;
+			text-align: right;
+		}
 
     .title {
       font-weight: bold;

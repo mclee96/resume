@@ -4,7 +4,7 @@ body {
   font-size: 11pt; }
 
 .personal-info {
-  padding-bottom: 2em;
+  padding-bottom: 0.2in;
   text-align: center; }
   .personal-info .name {
     font-family: "Taviraj", serif;
@@ -19,16 +19,51 @@ body {
     background-image: -ms-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
     background-image: -o-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
     background-image: linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF); }
-  .personal-info .address .email .phone {
+  .personal-info .address, .personal-info .email, .personal-info .phone {
     font-size: .9em; }
 
-.section .title {
+.education header, .experience header {
+  font-family: "Baskerville", serif;
+  font-variant: small-caps;
+  float: left; }
+.education .sub-section, .experience .sub-section {
+  padding-left: 1in;
+  padding-bottom: 0.15in; }
+  .education .sub-section .university, .education .sub-section .company-name, .experience .sub-section .university, .experience .sub-section .company-name {
+    padding-right: .5em;
+    font-weight: bold;
+    float: left; }
+  .education .sub-section .company-description, .experience .sub-section .company-description {
+    font-style: italic;
+    float: left; }
+  .education .sub-section .major, .education .sub-section .position, .experience .sub-section .major, .experience .sub-section .position {
+    float: left; }
+  .education .sub-section .location, .education .sub-section .date, .experience .sub-section .location, .experience .sub-section .date {
+    font-style: italic;
+    text-align: right; }
+  .education .sub-section .title, .experience .sub-section .title {
+    font-weight: bold;
+    float: none; }
+  .education .sub-section .description, .experience .sub-section .description {
+    font-style: italic; }
+  .education .sub-section .position, .experience .sub-section .position {
+    font-variant: small-caps; }
+  .education .sub-section ul, .experience .sub-section ul {
+    margin: 0; }
+
+.section header, .section .title {
   font-family: "Baskerville", serif;
   font-variant: small-caps;
   float: left; }
 .section .sub-section {
   padding-left: 7em;
-  padding-bottom: 1em; }
+  padding-bottom: 0.15in; }
+  .section .sub-section .university, .section .sub-section .major {
+    font-weight: bold;
+    float: left; }
+  .section .sub-section .location, .section .sub-section .date, .section .sub-section .gpa {
+    font-style: italic;
+    text-align: right; }
   .section .sub-section .title {
     font-weight: bold;
     float: none; }
