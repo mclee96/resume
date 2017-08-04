@@ -15,9 +15,8 @@ body {
 	padding-bottom: $vert-spacing + .05in;
 	text-align: center;
 
-	.name {
+	header.super-section {
 		width:100%;
-		display: block;
 		font-family: $name-font;
 		font-variant: small-caps;
 		font-size: xx-large;
@@ -25,14 +24,9 @@ body {
 
 	hr {
 		width: 100%;
-		margin-top: 0;
 		border: 0;
 		height: 1;
 		background-image: -webkit-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
-		background-image: -moz-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
-		background-image: -ms-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
-		background-image: -o-linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
-		background-image: linear-gradient(left, #FFFFFF, #000000, #000000, #000000, #000000, #FFFFFF);
 	}
 
 	.contact-info {
@@ -54,7 +48,6 @@ section.section:not(.contact-info) {
 
 	header.section {
 		position: relative;
-		width: 100%;
 
 		.name {
 			font-family: $primary-font;
