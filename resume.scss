@@ -35,7 +35,7 @@ body {
 	}
 }
 
-.education, .experience, .coursework, .skills {
+.education, .experience, .coursework, .skills, .awards {
   header {
     font-family: $primary-font;
     font-variant: small-caps;
@@ -155,9 +155,10 @@ body {
 .awards {
   .award {
     float: left;
+		width: 10em;
   }
 
   .event {
-    padding-left: 10em;
+		float: left;
   }
 }
